@@ -2,7 +2,7 @@
 
 Site public de présentation et politique de confidentialité de **CardValue for WikiMasters**.
 
-CardValue est une extension Chrome non officielle qui :
+CardValue est une extension Chrome non affiliée à WikiMasters qui :
 - affiche le prix moyen du marché sur les cartes de la collection WikiMasters ;
 - permet de trier la collection par prix moyen ;
 - utilise un cache local pour limiter les requêtes répétées.
