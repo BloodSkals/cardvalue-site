@@ -26,13 +26,19 @@
   <h2>Finalité</h2>
   <p>CardValue affiche le prix moyen du marché sur les cartes de la collection WikiMasters de l’utilisateur et permet de trier cette collection selon ces prix.</p>
 
-  <h2>Données traitées</h2>
+  <h2>Données WikiMasters traitées</h2>
   <p>Pour fournir cette fonctionnalité, l’extension traite localement le contenu nécessaire de la collection WikiMasters et les résumés de ventes auxquels la session WikiMasters de l’utilisateur a déjà accès, notamment l’identifiant de la carte, son titre, sa rareté et son prix moyen de marché.</p>
   <p>L’extension ne demande pas le mot de passe WikiMasters et ne lit, ne copie, ne stocke ni ne transmet les cookies, JWT ou autres jetons d’authentification. Les requêtes vers WikiMasters utilisent simplement la session déjà ouverte dans la page.</p>
+  <p>Les données de collection et de marché WikiMasters ne sont pas envoyées au développeur ni au fournisseur publicitaire.</p>
+
+  <h2>Publicité</h2>
+  <p>À partir de la version 1.1.0, CardValue peut afficher une publicité dans l’interface propre de l’extension, dans son popup, via <strong>PlayaYield</strong>, un service exploité par PlayaNext LLC. Aucune publicité PlayaYield n’est injectée dans les pages WikiMasters.</p>
+  <p>Pour diffuser, mesurer et sécuriser les publicités, PlayaYield peut recevoir des informations techniques limitées telles que l’adresse IP, des informations sur le navigateur ou l’appareil et des données d’interaction publicitaire telles que les impressions et clics. Ces traitements sont réalisés par PlayaYield pour la diffusion publicitaire, la mesure, la prévention de la fraude, la sécurité et le fonctionnement de son service.</p>
+  <p>Pour plus d’informations sur les traitements effectués par PlayaYield, consultez <a href="https://www.playayield.com/privacy" target="_blank" rel="noreferrer">la politique de confidentialité de PlayaYield</a>.</p>
 
   <h2>Transmission et partage</h2>
-  <p>CardValue ne possède aucun serveur de collecte de données et n’intègre, dans cette version 1.0.5, ni service d’analyse ni réseau publicitaire. Les données de collection et de marché ne sont pas envoyées au développeur ni à un tiers.</p>
-  <p>Les seules communications réseau nécessaires aux fonctions de l’extension sont des requêtes HTTPS vers <code>www.wiki-masters.com</code> afin de lire les données de collection et de marché accessibles à l’utilisateur connecté.</p>
+  <p>CardValue ne possède aucun serveur de collecte des données de collection WikiMasters. Les données de collection et de marché nécessaires au fonctionnement principal restent traitées localement dans le navigateur et ne sont pas envoyées au développeur.</p>
+  <p>Les communications réseau de CardValue concernent les requêtes HTTPS vers <code>www.wiki-masters.com</code> nécessaires à ses fonctionnalités et, lorsque la publicité est activée dans la version publiée, les requêtes nécessaires au service PlayaYield.</p>
 
   <h2>Stockage local</h2>
   <p>Les préférences de CardValue sont enregistrées dans <code>chrome.storage.local</code>. Le mode de tri et le cache des résumés de prix sont enregistrés localement dans le stockage du site <code>wiki-masters.com</code> sous des clés propres à CardValue afin d’éviter de répéter inutilement un grand nombre de requêtes.</p>
@@ -47,7 +53,8 @@
   </ul>
 
   <h2>Utilisation limitée des données</h2>
-  <p>Les données traitées par CardValue sont utilisées uniquement pour ses fonctionnalités visibles de prix moyen, de cache et de tri. Elles ne sont pas utilisées à des fins publicitaires, de profilage, de revente, de notation de crédit ou pour toute autre finalité sans rapport avec ces fonctionnalités.</p>
+  <p>Les données WikiMasters traitées par CardValue sont utilisées uniquement pour les fonctionnalités visibles de prix moyen, de cache et de tri. Elles ne sont pas revendues, utilisées pour la notation de crédit ou transmises à PlayaYield.</p>
+  <p>Les données techniques liées à la publicité sont traitées par PlayaYield conformément à sa propre politique de confidentialité et aux finalités publicitaires décrites ci-dessus.</p>
 
   <h2>Affiliation</h2>
   <div class="box">CardValue est une extension indépendante et non officielle. Elle n’est ni éditée, ni approuvée, ni sponsorisée par WikiMasters. Les marques et contenus associés à WikiMasters appartiennent à leurs propriétaires respectifs.</div>
