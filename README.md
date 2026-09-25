@@ -5,7 +5,10 @@ Site public de présentation et politique de confidentialité de **CardValue for
 CardValue est une extension Chrome non affiliée à WikiMasters qui :
 - affiche le prix moyen du marché sur les cartes de la collection WikiMasters ;
 - permet de trier la collection par prix moyen ;
-- utilise un cache local pour limiter les requêtes répétées.
+- utilise un cache local pour limiter les requêtes répétées ;
+- peut afficher une publicité dans le popup de l’extension via PlayaYield à partir de la version 1.1.0.
+
+La publicité reste dans l’interface propre de l’extension et n’est pas injectée dans les pages WikiMasters.
 
 ## Limitation connue : vitesse du premier chargement
 
@@ -43,6 +46,10 @@ Non. CardValue utilise les données de marché accessibles à l'utilisateur conn
 ### Pourquoi les chargements suivants sont-ils plus rapides ?
 
 Les moyennes déjà récupérées sont conservées dans un cache local pendant la durée configurée dans l'extension. Tant qu'une valeur est encore valide dans ce cache, CardValue n'a pas besoin de la demander à nouveau.
+
+### Où la publicité apparaît-elle ?
+
+À partir de la version 1.1.0, CardValue peut afficher une publicité PlayaYield dans le popup de l’extension. Elle n’est pas injectée dans les pages WikiMasters.
 
 ## Confidentialité
 
